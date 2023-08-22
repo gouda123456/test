@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C2850F5-6DE2-4653-88A2-7EE1EF271126}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Marketing_River</RootNamespace>
+    <AssemblyName>Marketing River</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\accessories.css" />
+    <Content Include="css\books.css" />
+    <Content Include="css\clothes.css" />
+    <Content Include="css\مستلزمات طبيه.css" />
+    <Content Include="css\g_style.css" />
+    <Content Include="css\offers.css" />
+    <Content Include="css\sign-in.css" />
+    <Content Include="image\books\book.jpg" />
+    <Content Include="image\books\book1.jpg" />
+    <Content Include="image\books\book10.jpg" />
+    <Content Include="image\books\book11.jpg" />
+    <Content Include="image\books\book12.jpg" />
+    <Content Include="image\books\book13.jpg" />
+    <Content Include="image\books\book14.jpg" />
+    <Content Include="image\books\book15.jpg" />
+    <Content Include="image\books\book16.jpg" />
+    <Content Include="image\books\book17.jpg" />
+    <Content Include="image\books\book18.jpg" />
+    <Content Include="image\books\book19.jpg" />
+    <Content Include="image\books\book2.jpg" />
+    <Content Include="image\books\book20.jpg" />
+    <Content Include="image\books\book21.jpg" />
+    <Content Include="image\books\book22.jpg" />
+    <Content Include="image\books\book23.jpg" />
+    <Content Include="image\books\book24.jpg" />
+    <Content Include="image\books\book3.jpg" />
+    <Content Include="image\books\book4.jpg" />
+    <Content Include="image\books\book5.jpg" />
+    <Content Include="image\books\book6.jpg" />
+    <Content Include="image\books\book7.jpg" />
+    <Content Include="image\books\book8.jpg" />
+    <Content Include="image\books\book9.jpg" />
+    <Content Include="image\clothes\111-removebg-preview.png" />
+    <Content Include="image\clothes\aa-removebg-preview.png" />
+    <Content Include="image\clothes\aa.jpg" />
+    <Content Include="image\clothes\cloth.png" />
+    <Content Include="image\clothes\clothes-removebg-preview.png" />
+    <Content Include="image\elc\0.jpg" />
+    <Content Include="image\elc\1.jpg" />
+    <Content Include="image\elc\10.jpg" />
+    <Content Include="image\elc\11.jpg" />
+    <Content Include="image\elc\12.jpg" />
+    <Content Include="image\elc\13.jpg" />
+    <Content Include="image\elc\14.jpg" />
+    <Content Include="image\elc\15.jpg" />
+    <Content Include="image\elc\16.jpg" />
+    <Content Include="image\elc\17.jpg" />
+    <Content Include="image\elc\18.jpg" />
+    <Content Include="image\elc\19.jpg" />
+    <Content Include="image\elc\2.jpg" />
+    <Content Include="image\elc\20.jpg" />
+    <Content Include="image\elc\21.jpg" />
+    <Content Include="image\elc\22.jpg" />
+    <Content Include="image\elc\23.jpg" />
+    <Content Include="image\elc\24.jpg" />
+    <Content Include="image\elc\3.jpg" />
+    <Content Include="image\elc\4.jpg" />
+    <Content Include="image\elc\5.jpg" />
+    <Content Include="image\elc\6.jpg" />
+    <Content Include="image\elc\7.jpg" />
+    <Content Include="image\elc\8.jpg" />
+    <Content Include="image\elc\9.jpg" />
+    <Content Include="image\Home\download %281%29.jpeg" />
+    <Content Include="image\Home\download %281%29.png" />
+    <Content Include="image\Home\download %282%29.jpeg" />
+    <Content Include="image\Home\download %283%29.jpeg" />
+    <Content Include="image\Home\download %284%29.jpeg" />
+    <Content Include="image\Home\download.jpeg" />
+    <Content Include="image\Home\download.png" />
+    <Content Include="image\Home\Google__G__Logo.svg.png" />
+    <Content Include="image\Home\images %281%29.jpeg" />
+    <Content Include="image\Home\images %281%29.png" />
+    <Content Include="image\Home\images %282%29.png" />
+    <Content Include="image\Home\images.jpeg" />
+    <Content Include="image\Home\images.png" />
+    <Content Include="image\Home\sgin-in.jpg" />
+    <Content Include="image\mobile\0.jpg" />
+    <Content Include="image\mobile\1.jpg" />
+    <Content Include="image\mobile\10.jpg" />
+    <Content Include="image\mobile\11.jpg" />
+    <Content Include="image\mobile\12.jpg" />
+    <Content Include="image\mobile\13.jpg" />
+    <Content Include="image\mobile\14.jpg" />
+    <Content Include="image\mobile\15.jpg" />
+    <Content Include="image\mobile\16.jpg" />
+    <Content Include="image\mobile\17.jpg" />
+    <Content Include="image\mobile\18.jpg" />
+    <Content Include="image\mobile\19.jpg" />
+    <Content Include="image\mobile\2.jpg" />
+    <Content Include="image\mobile\20.jpg" />
+    <Content Include="image\mobile\21.jpg" />
+    <Content Include="image\mobile\22.jpg" />
+    <Content Include="image\mobile\23.jpg" />
+    <Content Include="image\mobile\24.jpg" />
+    <Content Include="image\mobile\25.jpg" />
+    <Content Include="image\mobile\26.jpg" />
+    <Content Include="image\mobile\28.jpg" />
+    <Content Include="image\mobile\3.jpg" />
+    <Content Include="image\mobile\4.jpg" />
+    <Content Include="image\mobile\5.jpg" />
+    <Content Include="image\mobile\6.jpg" />
+    <Content Include="image\mobile\6t.jpg" />
+    <Content Include="image\mobile\7.jpg" />
+    <Content Include="image\mobile\8.jpg" />
+    <Content Include="image\mobile\9.jpg" />
+    <Content Include="image\offers\1.png" />
+    <Content Include="image\offers\10.png" />
+    <Content Include="image\offers\11.png" />
+    <Content Include="image\offers\12.png" />
+    <Content Include="image\offers\13.png" />
+    <Content Include="image\offers\14.png" />
+    <Content Include="image\offers\15.png" />
+    <Content Include="image\offers\199cd697-5382-4c63-a8cc-8ff2c782b44b.jpg" />
+    <Content Include="image\offers\2.png" />
+    <Content Include="image\offers\3.png" />
+    <Content Include="image\offers\5.png" />
+    <Content Include="image\offers\50 offer.jpg" />
+    <Content Include="image\offers\50_offer-removebg-preview.png" />
+    <Content Include="image\offers\6.png" />
+    <Content Include="image\offers\7.png" />
+    <Content Include="image\offers\8.png" />
+    <Content Include="image\offers\819a3368-e9e8-4216-ba9b-0dec60bc3d7a.png" />
+    <Content Include="image\offers\9.png" />
+    <Content Include="image\offers\asddas.png" />
+    <Content Include="image\offers\download 1.png" />
+    <Content Include="image\offers\download.png" />
+    <Content Include="image\sport\0.jpg" />
+    <Content Include="image\sport\1.jpg" />
+    <Content Include="image\sport\10.jpg" />
+    <Content Include="image\sport\11.jpg" />
+    <Content Include="image\sport\12.jpg" />
+    <Content Include="image\sport\13.jpg" />
+    <Content Include="image\sport\14.jpg" />
+    <Content Include="image\sport\15.jpg" />
+    <Content Include="image\sport\16.jpg" />
+    <Content Include="image\sport\17.jpg" />
+    <Content Include="image\sport\18.jpg" />
+    <Content Include="image\sport\19.jpg" />
+    <Content Include="image\sport\2.jpg" />
+    <Content Include="image\sport\20.jpg" />
+    <Content Include="image\sport\21.jpg" />
+    <Content Include="image\sport\22.jpg" />
+    <Content Include="image\sport\23.jpg" />
+    <Content Include="image\sport\24.jpg" />
+    <Content Include="image\sport\25.jpg" />
+    <Content Include="image\sport\26.jpg" />
+    <Content Include="image\sport\27.jpg" />
+    <Content Include="image\sport\28.jpg" />
+    <Content Include="image\sport\3.jpg" />
+    <Content Include="image\sport\4.jpg" />
+    <Content Include="image\sport\5.jpg" />
+    <Content Include="image\sport\6.jpg" />
+    <Content Include="image\sport\7.jpg" />
+    <Content Include="image\sport\8.jpg" />
+    <Content Include="image\sport\9.jpg" />
+    <Content Include="image\اكسسوارات\1 %281%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %2810%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %2811%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %2812%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %2813%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %2814%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %2815%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %282%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %283%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %284%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %285%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %286%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %287%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %288%29.jpg" />
+    <Content Include="image\اكسسوارات\1 %289%29.jpg" />
+    <Content Include="image\اكسسوارات\1.jpg" />
+    <Content Include="image\مستلزمات طبية\41lBswKXnjL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\51bgrY8ECXL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\51clMcU2rAL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\51cpn2edSrL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\51L6TDqDC5L._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\51Ni2xjKDGL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\51sJGQoP7UL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\51UHEEOr4jL._AC_UL320_ %281%29.jpg" />
+    <Content Include="image\مستلزمات طبية\51UHEEOr4jL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\51WX0amzVFL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\51Zg-akshXL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\51ZHkSaC6NL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\61zvk7mPbmL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\71+aexQ4qmL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\71d8xOUFWrS._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\71suhdmkJJL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\71VuyLBFMxL._AC_UL320_.jpg" />
+    <Content Include="image\مستلزمات طبية\81lhqn+jOTL._AC_UL320_.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="css\Home.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="viwes\accessories.html" />
+    <Content Include="viwes\books.html" />
+    <Content Include="viwes\clothes.html" />
+    <Content Include="viwes\elc.html" />
+    <Content Include="viwes\مستلزمات طبيه.html" />
+    <Content Include="viwes\Home.html" />
+    <Content Include="viwes\mobile.html" />
+    <Content Include="viwes\offers.html" />
+    <Content Include="viwes\sign-in.html" />
+    <Content Include="viwes\sport.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1158</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1158/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
